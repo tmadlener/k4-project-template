@@ -35,6 +35,8 @@ add_test(NAME ReadExampleEventData
                WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
                COMMAND k4run k4ProjectTemplate/options/readExampleEventData.py)
 set_test_env(ReadExampleEventData)
+set_property(TEST ReadExampleEventData APPEND PROPERTY DEPENDS CreateExampleEventData)
+
 
 add_test(NAME HelloWorldAlg
                WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
