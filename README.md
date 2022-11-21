@@ -8,12 +8,10 @@ This repository can be a starting point and template for projects using the Key4
 ## Dependencies
 
 * ROOT
-
-* PODIO
-
 * Gaudi
-
 * k4FWCore
+* EDM4hep
+  * PODIO
 
 ## Installation
 
@@ -24,18 +22,15 @@ mkdir build install
 cd build;
 cmake .. -DCMAKE_INSTALL_PREFIX=../install
 make install
-
-
 ```
 
 ## Execute Examples 
 
 
 ```
-./run gaudirun.py ../k4TestFWCore/options/createHelloWorld.py 
+k4run ../k4ProjectTemplate/options/createHelloWorld.py
 
-./run gaudirun.py ../k4TestFWCore/options/createExampleEventData.py 
-
+k4run ../k4ProjectTemplate/options/createExampleEventData.py
 ```
 
 
