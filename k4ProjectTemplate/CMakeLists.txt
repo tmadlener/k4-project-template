@@ -14,8 +14,6 @@ install(TARGETS k4ProjectTemplatePlugins
   PUBLIC_HEADER DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/@{CMAKE_PROJECT_NAME}"
   COMPONENT dev)
 
-include(CTest)
-
 #--- The genConf directory has been renamed to genConfDir in Gaudi 35r1
 #--- See https://gitlab.cern.ch/gaudi/Gaudi/-/merge_requests/1158
 set(GAUDI_GENCONF_DIR "genConfDir")
